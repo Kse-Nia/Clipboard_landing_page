@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+// le coeur du site
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url(./images/bg-header-mobile.png);
+
+    &__logo {
+        margin: 10% 0 10%;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    width: 90%;
+    margin: 1% auto 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__containerText {
+        margin-bottom: 15%;
+    }
+}
+
+.btn {
+    width: 90%;
+    height: 4em;
+    margin: 2% auto 2%;
+    border-radius: 30px;
+    border: none;
+    background-color: #26bba5;
+    color: white;
+
+    &__2 {
+        background-color: #6273ff;
+    }
+}
+
+.footer{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color: rgb(77, 77, 77);
+}

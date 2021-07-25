@@ -3,7 +3,7 @@
 $text: #BBC0C1;
 $btn1: #26bba5;
 $btn2: #6273ff;
-$footer: rgb(190, 190, 190);
+$footer: #F5F6F8;
 
 @mixin shadow {
     -webkit-box-shadow: 0px 6px 3px -2px rgba(153, 153, 153, 0.97);
@@ -41,7 +41,7 @@ $footer: rgb(190, 190, 190);
 }
 
 .main {
-    width: 90%;
+    width: 100%;
     margin: 1% auto 5%;
     display: flex;
     flex-direction: column;
@@ -49,41 +49,91 @@ $footer: rgb(190, 190, 190);
     align-items: center;
 
     &__containerText {
+        width: 100%;
         margin-bottom: 30%;
+    }
+
+    &__gallery {
+        max-width: 95%;
+        height: auto;
+        margin: 10% auto 10%;
+    }
+
+    &__blocText {
+        padding: 0 5% 0;
+        margin: 5% auto 5%;
+        color: $text;
+        font-size: 16px;
+        line-height: 2em;
+    }
+
+    &__ico {
+        margin: 10% auto 10%;
+    }
+
+    &__company {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__brand {
+        max-width: 30%;
+        height: auto;
+        margin: 5% auto 5%;
     }
 }
 
 .info {
+    padding: 0 5% 0;
     margin-top: 10%;
     font-weight: 600;
 }
 
-.blocText{
-    margin-top: 5%;
-    color: $text;
-    font-size: 12px;
-    line-height: 2em;
-}
 .btn {
     width: 90%;
-    height: 3.5em;
+    height: 3em;
     margin: 2% auto 2%;
     border-radius: 30px;
     border: none;
     background-color: $btn1;
     color: white;
-    @include shadow;
+    font-size: 18px;
+    //@include shadow;
+    border-bottom: 3px solid #199481;
 
     &__2 {
         background-color: $btn2;
+        border-bottom: 3px solid #3c4bd6;
     }
 }
 
 .footer {
     width: 100%;
-    height: 20vh;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-   background-color: $footer;
+    background-color: $footer;
+
+    &__logobis {
+        max-width: 14%;
+        height: auto;
+        margin: 10% auto 5%;
+    }
+
+    &__links {
+        line-height: 3em;
+        font-weight: 400;
+    }
+
+    &__icons {
+        margin: 10% auto 10%;
+    }
+
+    &__social {
+        padding: 0 5% 0;
+    }
 }

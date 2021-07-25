@@ -10,7 +10,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Clipboard landing page</title>
@@ -38,7 +38,7 @@
   <main class="main">
     <h1 class="title"> A history of everything you copy</h1>
     <div class="main__containerText">
-      <p class="blocText"> Clipboard allows you to track and organize everything you
+      <p class="main__blocText"> Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.</p>
 
       <button class="btn">Download for iOS</button>
@@ -47,39 +47,55 @@
 
     <div class="main__containerText">
       <h2 class="info"> Keep track of your snippets</h2>
-      <p class="blocText">Clipboard instantly stores any item you copy in the cloud,
+      <p class="main__blocText">Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.</p>
-
+      <picture>
+        <img src="./images/image-computer.png" alt="picture of an iMAc" class="main__gallery">
+      </picture>
       <h3> Quick Search</h3>
-      <p class="blocText">Easily search your snippets by content, category, web address, application, and more.</p>
+      <p class="main__blocText">Easily search your snippets by content, category, web address, application, and more.
+      </p>
       <h3> iCloud Sync</h3>
 
-      <p class="blocText"> Instantly saves and syncs snippets across all your devices.</p>
+      <p class="main__blocText"> Instantly saves and syncs snippets across all your devices.</p>
 
       <h3> Complete History</h3>
 
-      <p class="blocText">Retrieve any snippets from the first moment you started using the app.</p>
+      <p class="main__blocText">Retrieve any snippets from the first moment you started using the app.</p>
     </div>
     <div class="main__containerText">
       <h2 class="info">Access Clipboard anywhere</h2>
 
-      <p class="blocText">Whether you’re on the go, or at your computer, you can access all your Clipboard
+      <p class="main__blocText">Whether you’re on the go, or at your computer, you can access all your Clipboard
         snippets in a few simple clicks.
+        <picture>
+          <img src="./images/image-devices.png" alt="picture of an iMAc" class="main__gallery">
+        </picture>
         <h2 class="info"> Supercharge your workflow</h2>
-        <p class="blocText">We’ve got the tools to boost your productivity.
+        <p class="main__blocText">We’ve got the tools to boost your productivity.</p>
+        <picture><img src="./images/icon-blacklist.svg" alt="icon representing a tiping text" class="main__ico"></picture>
           <h3>Create blacklists</h3>
-          <p class="blocText">Ensure sensitive information never makes its way to your clipboard by excluding certain
+          <p class="main__blocText">Ensure sensitive information never makes its way to your clipboard by excluding
+            certain
             sources.</p>
+            <picture><img src="./images/icon-text.svg" alt="icon representing an eye" class="main__ico"></picture>
           <h3> Plain text snippets</h3>
-          <p class="blocText"> Remove unwanted formatting from copied text for a consistent look.</p>
+          <p class="main__blocText"> Remove unwanted formatting from copied text for a consistent look.</p>
+          <picture><img src="./images/icon-preview.svg" alt="icon representing an eye" class="main__ico"></picture>
           <h3>Sneak preview</h3>
-          <p class="blocText"> Quick preview of all snippets on your Clipboard for easy access.</p>
-        </p>
+          <p class="main__blocText"> Quick preview of all snippets on your Clipboard for easy access.</p>
+        <div class="main__company">
+            <img src="./images/logo-google.png" alt="Google logo" class="main__brand">
+            <img src="./images/logo-ibm.png" alt="IBM logo" class="main__brand">
+            <img src="./images/logo-microsoft.png" alt="Microsoft logo" class="main__brand">
+            <img src="./images/logo-hp.png" alt="IBM logo" class="main__brand">
+            <img src="./images/logo-vector-graphics.png" alt="IBM logo" class="main__brand">
+        </div>
     </div>
     <div class="main__containerText">
       <h3>Clipboard for iOS and Mac OS</h3>
-      <p class="blocText"> Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+      <p class="main__blocText"> Available for free on the App Store. Download for Mac or iOS, sync with iCloud
         and you’re ready to start adding to your clipboard.</p>
 
       <button class="btn"> Download for iOS</button>
@@ -87,15 +103,19 @@
     </div>
   </main>
   <footer class="footer">
-    <p>FAQs</p>
+    <picture>
+      <img src="images/logo.svg" alt="logo companie" class="footer__logobis">
+    </picture>
+    <p class="footer__links">FAQs</p>
     <span> Contact Us</p>
-      <p> Privacy Policy</p>
+      <p class="footer__links"> Privacy Policy</p>
       <p> Press Kit</p>
-      <p>Install Guide</p>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <p class="footer__links">Install Guide</p>
+      <div class="footer__icons">
+        <img src="./images/icon-facebook.svg" alt="social media icon for Facebook" class="footer__social">
+        <img src="./images/icon-twitter.svg" alt="social media icon for Twitter" class="footer__social">
+        <img src="./images/icon-instagram.svg" alt="social media icon for Instagram" class="footer__social">
+      </div>
   </footer>
 </body>
 
